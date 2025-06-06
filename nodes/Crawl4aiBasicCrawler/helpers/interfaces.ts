@@ -36,7 +36,6 @@ export interface BrowserConfig {
     width: number;
     height: number;
   };
-  timeout?: number;
   userAgent?: string;
 }
 
