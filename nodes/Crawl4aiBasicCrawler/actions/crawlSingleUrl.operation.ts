@@ -59,13 +59,6 @@ export const description: INodeProperties[] = [
         description: 'Whether to run browser in headless mode',
       },
       {
-        displayName: 'Timeout (Ms)',
-        name: 'timeout',
-        type: 'number',
-        default: 30000,
-        description: 'Maximum time to wait for the browser to load the page',
-      },
-      {
         displayName: 'User Agent',
         name: 'userAgent',
         type: 'string',
