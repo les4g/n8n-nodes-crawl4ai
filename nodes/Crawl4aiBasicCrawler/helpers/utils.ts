@@ -32,7 +32,6 @@ export function createBrowserConfig(options: IDataObject): BrowserConfig {
       width: options.viewportWidth ? Number(options.viewportWidth) : 1280,
       height: options.viewportHeight ? Number(options.viewportHeight) : 800,
     },
-    timeout: options.timeout ? Number(options.timeout) : 30000,
     userAgent: options.userAgent ? String(options.userAgent) : undefined,
   };
 }
