@@ -1,5 +1,4 @@
-import { IExecuteFunctions } from 'n8n-workflow';
-import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
+import axios, { AxiosInstance } from 'axios';
 import { Crawl4aiApiCredentials, CrawlerRunConfig, CrawlResult } from './interfaces';
 
 /**
@@ -181,6 +180,10 @@ export class Crawl4aiClient {
         cache_mode: options.cacheMode || 'enabled',
         js_code: options.jsCode,
         css_selector: options.cssSelector,
+        viewport: {
+          width: options.browserConfig?.viewportWidth || 1280,
+          height: options.browserConfig?.viewportHeight || 800,
+        },
       };
 
       // Add extraction strategy if provided
@@ -254,7 +257,6 @@ export class Crawl4aiClient {
       cache_mode: config.cacheMode || 'enabled',
       stream: config.streamEnabled || false,
       page_timeout: config.pageTimeout || 30000,
-      request_timeout: config.requestTimeout || 30000,
       js_code: config.jsCode,
       js_only: config.jsOnly || false,
       css_selector: config.cssSelector,
@@ -263,7 +265,6 @@ export class Crawl4aiClient {
       check_robots_txt: config.checkRobotsTxt || false,
       word_count_threshold: config.wordCountThreshold || 0,
       session_id: config.sessionId,
-      max_retries: config.maxRetries || 3,
     };
 
     // Add extraction strategy if present
