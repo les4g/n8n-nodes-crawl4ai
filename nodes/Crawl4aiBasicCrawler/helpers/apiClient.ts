@@ -241,7 +241,6 @@ export class Crawl4aiClient {
           type: 'dict',
           value: config.viewport,
         } : { type: 'dict', value: { width: 1280, height: 800 } },
-        timeout: config.timeout || 30000,
         user_agent: config.userAgent,
       },
     };
