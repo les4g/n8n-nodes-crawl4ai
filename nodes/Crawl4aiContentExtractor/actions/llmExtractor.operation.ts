@@ -206,12 +206,10 @@ export const description: INodeProperties[] = [
 					{
 						name: 'Anthropic Claude 3 Sonnet',
 						value: 'anthropic/claude-3-sonnet',
-						description: 'Anthropic Claude 3 Sonnet',
 					},
 					{
 						name: 'Groq Llama 3 70B',
 						value: 'groq/llama3-70b-8192',
-						description: 'Groq Llama 3 70B',
 					},
 					{
 						name: 'Ollama Llama 3',
@@ -221,12 +219,10 @@ export const description: INodeProperties[] = [
 					{
 						name: 'OpenAI GPT-3.5 Turbo',
 						value: 'openai/gpt-3.5-turbo',
-						description: 'OpenAI GPT-3.5 Turbo',
 					},
 					{
 						name: 'OpenAI GPT-4o',
 						value: 'openai/gpt-4o',
-						description: 'OpenAI GPT-4o',
 					},
 				],
 				default: 'openai/gpt-4o',

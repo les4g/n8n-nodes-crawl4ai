@@ -10,6 +10,7 @@ export {
 
 import { IDataObject } from 'n8n-workflow';
 import { CssSelectorSchema, LlmSchema } from './interfaces';
+import { cleanText } from '../../Crawl4aiBasicCrawler/helpers/utils';
 
 /**
  * Create a CSS selector extraction strategy
